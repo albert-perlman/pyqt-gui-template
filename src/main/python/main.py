@@ -26,13 +26,13 @@ class MainWindow(QMainWindow):
     self.setCentralWidget(MainWidgetContainer)
 
     # get user's screen dimensions
-    self.screen = QDesktopWidget().screenGeometry()
-    self.maxWidth = self.screen.width()
-    self.maxHeight = self.screen.height()
+    self.screenSize = QDesktopWidget().screenGeometry()
+    self.maxScreenWidth = self.screenSize.width()
+    self.maxScreenHeight = self.screenSize.height()
 
     # Main Window sizing
-    self.setMinimumSize(self.maxWidth//2.5,self.maxHeight//2.5)
-    self.resize(self.maxWidth//2,self.maxHeight//2)
+    self.setMinimumSize(self.maxScreenWidth//2.5,self.maxScreenHeight//2.5)
+    self.resize(self.maxScreenWidth//2,self.maxScreenHeight//2)
 
     #############
     #  WIDGETS  #
