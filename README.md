@@ -1,2 +1,2 @@
-# sox-gui
-GUI for audio processing with SoX
+# PyQt GUI template
+template repository for PyQt projects using fbs build system
